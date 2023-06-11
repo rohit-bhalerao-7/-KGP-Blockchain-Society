@@ -10,6 +10,4 @@ A new function has been implemented to enable the transfer of ownership to anoth
 ## Task C: Removal of Chain-Link Integration
 The Chain-Link integration has been removed from the Fund-Me contract to simplify its implementation. While Chain-Link provides powerful external data integration capabilities, the decision to remove it was made to streamline the contract's complexity. By focusing primarily on handling funders' contributions and maintaining ownership functionality, the contract's implementation becomes more straightforward and easier to understand.
 
-Please refer to the individual task folders for the updated contract code and any additional documentation related to each task.
-
 Your feedback and suggestions are welcome. Thank you for considering these completed tasks for the Fund-Me contract.
