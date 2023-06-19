@@ -7,7 +7,6 @@ pragma solidity ^0.8.0;
 
 //instead of writing require statements and increasing gas price we declare error at top
 
-error notOwner();
 
 contract FundMe {
     // using PriceConverter for uint256;
@@ -29,13 +28,13 @@ contract FundMe {
         owner = msg.sender;
     }
 
-    modifier onlyOwner() {
+   /* modifier onlyOwner() {
         //require(msg.sender == owner," Sender is not the owner");
         if (msg.sender != owner) {
             revert notOwner();
         }
         _; //This means run rest of the code after require/if
-    }
+    }*/
 
     function addFunder(address who) public {
         // Only add the address to the array if it's not already in the mapping
