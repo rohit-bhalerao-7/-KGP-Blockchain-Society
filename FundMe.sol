@@ -67,7 +67,7 @@ contract FundMe {
         //     "Didn't send enough!"
         // ); // 1e18= 1 x 10 x 10...(18 times 10)
         funders.push(msg.sender); //it will push the address of sender
-        addressToAmountFunded[msg.sender] = msg.value;
+        addressToAmountFunded[msg.sender] += msg.value;
 
         //Want to able to set minimum fund amount in USD
         //1. How do we send ETH to this contract?
